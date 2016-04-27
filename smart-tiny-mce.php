@@ -34,7 +34,7 @@ function my_custom_plugins () {
 
 add_filter( 'tiny_mce_before_init', 'my_format_TinyMCE' );
     wp_enqueue_style( 'my_custom_style', plugin_dir_url( __FILE__ ) . 'mystyle.css', time() );
-    wp_enqueue_script( 'my_custom_script', plugin_dir_url( __FILE__ ) . 'myscript.js', time() );
+    wp_enqueue_script( 'my_custom_script', plugin_dir_url( __FILE__ ) . 'myscript.js', array(), '1.1.2', true );
   //  wp_enqueue_script( 'my_custom_script2', plugin_dir_url( __FILE__ ) . 'bower_components/waypoints/lib/jquery.waypoints.min.js', time() );
     wp_enqueue_script( 'my_custom_script3', plugin_dir_url( __FILE__ ) . 'bower_components/tinymce/tinymce.min.js', time() );
 
